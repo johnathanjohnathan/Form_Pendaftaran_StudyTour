@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #669ccb;
+  --primary-color-dark: #5681a7;
+  --secondary-color: #e8f1fa;
+  --text-dark: #282d31;
+  --text-light: #767268;
+  --extra-light: #f3f4f6;
+
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header{
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(45, 92, 132, 0.5),
+      rgba(45, 92, 132, 0.5)
+    ),
+    url("bg-1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Style the tab content*/
+.tabcontent{
+  background-color: rgba(255, 255, 255, 0.518);
+  height: auto;
+  width: 100%;
+}
+
+/* Style the form*/
+.title{
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-label{
+  font-size: 1rem;
+  font-style: bold;
+  color: black;
+  margin-bottom: 5rem;
+  text-align: left;
+}
+
+.mb-3 .form-control{
+  width: 50%;
+}
+
+.mb-3 .form-text{
+  color: var(--text-dark);
+}
+
+/* Style the resume*/
+h5{
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p{
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: var(--secondary-color);
+  }
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+  
+ /* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--primary-color);
+  }
+  
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--primary-color);
+}
+  
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
